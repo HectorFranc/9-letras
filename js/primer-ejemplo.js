@@ -1,23 +1,23 @@
 let game = new Game([
     {
-        word: 'Ejemplo',
-        incorrect: ['Incorrect', 'Incorrect', 'Incorrect'],
-        correct: 'Correcto'
+        word: 'tomate',
+        incorrect: ['animal', 'cuadrado', 'lento'],
+        correct: 'rojo'
     },
     {
-        word: 'Ejemplo2',
-        incorrect: ['Incorrect2', 'Incorrect2', 'Incorrect2'],
-        correct: 'Correcto2'
+        word: 'rojo',
+        incorrect: ['limón', 'pariente', 'lente'],
+        correct: 'amarillo'
     },
     {
-        word: 'Ejemplo3',
-        incorrect: ['Incorrect3', 'Incorrect3', 'Incorrect3'],
-        correct: 'Correcto3'
+        word: 'amarillo',
+        incorrect: ['hermano', 'rápido', 'agua'],
+        correct: 'plátano'
     },
     {
-        word: 'Ejemplo4',
-        incorrect: ['Incorrect4', 'Incorrect4', 'Incorrect4'],
-        correct: 'Correcto4'
+        word: 'plátano',
+        incorrect: ['color', 'animal', 'rápido'],
+        correct: 'alimento'
     }
 ])
 game.start()
