@@ -20,4 +20,7 @@ let game = new Game([
         correct: 'alimento'
     }
 ])
+document.querySelector('.DH_play-button').addEventListener('click', (event) => {
+    document.querySelector('.DH_instructions').style.display = 'none'
+})
 game.start()

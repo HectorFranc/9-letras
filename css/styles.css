@@ -11,6 +11,38 @@ main {
     border: 5px solid white;
 }
 
+/* --- Instructions */
+.DH_instructions {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+    font-size: 30px;
+}
+.DH_instructions > p {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    color: rgb(0, 0, 116);
+    margin-top: 20vh;
+}
+.DH_play-button {
+    cursor: pointer;
+    color: cadetblue;
+    border: 1px solid white;
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10vh;
+    padding: 10px;
+}
+.DH_play-button:hover {
+    color: rgb(0, 65, 117);
+}
+
 /* --- Actual Words --- */
 .DH_words {
     height: 40vh;
