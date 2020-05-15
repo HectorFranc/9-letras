@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Lato, Ubunut, sans-serif;
+}
+
+main {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: aquamarine;
+    border: 5px solid white;
+}
+
+/* --- Actual Words --- */
+.DH_words {
+    height: 40vh;
+    border-bottom: 5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 60px;
+}
+
+.DH_words__last {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.DH_words__last > div {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.DH_words__actual {
+    color: rgb(0, 27, 150);
+}
+
+/* --- Actual Options */
+.DH_options {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.DH_option {
+    width: 50%;
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Progress */
+.DH_progress {
+    width: 100%;
+}
+.DH_progress > progress{
+    display: block;
+    width: 90%;
+    margin: auto;
+    -webkit-appearance: none;
+    appearance: none;
+}
+div.DH_progress > progress::-webkit-progress-bar{
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+.DH_progress > progress::-webkit-progress-value{
+    background-color: red;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .DH_option {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 364px) {
+    .DH_option {
+        font-size: 40px;
+    }
+}
