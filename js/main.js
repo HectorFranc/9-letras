@@ -17,7 +17,7 @@ class Game {
     nextLevel() {
         this.actualIndex += 1
         if (this.actualIndex >= this.slides.length) {
-            alert('Felicidades')
+            alert('Felicidades. ¡Buen trabajo!')
             this.start()
         }
         this.updateLevel()
@@ -42,6 +42,8 @@ class Game {
         if (event.target.innerText === this.slides[this.actualIndex]['correct']) {
             this.removeEventsListeners()
             setTimeout(this.nextLevel.bind(this), 200)
+        } else {
+            window.speechSynthesis.speak(new SpeechSynthesisUtterance('Intenta de nuevo'))
         }
     }
     setProgress() {

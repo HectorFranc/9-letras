@@ -47,6 +47,11 @@ main {
     font-size: 60px;
     text-align: center;
     padding: 30px;
+    cursor: pointer;
+    border: 1px solid blue;
+}
+.DH_option:active {
+    background-color: teal;
 }
 
 /* Progress */
